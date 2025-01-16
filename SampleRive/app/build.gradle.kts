@@ -56,4 +56,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.rive.android)
+    // During initialization, you may need to add a dependency
+    // for Jetpack Startup
+    implementation("androidx.startup:startup-runtime:1.1.1")
 }

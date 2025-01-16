@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SampleRive</string>
+    <string name="title_activity_rive">RiveActivity</string>
 </resources>
