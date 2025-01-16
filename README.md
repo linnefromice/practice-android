@@ -1,4 +1,4 @@
-# android_practice_v2
+# practice-android
 
 ## Reference
 
