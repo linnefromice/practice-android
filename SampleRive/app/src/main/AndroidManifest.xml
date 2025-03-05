@@ -14,28 +14,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleRive"
         tools:targetApi="31">
+        
+        <activity
+            android:name=".ForAndroidActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SampleRive" />
+            
+        <activity
+            android:name=".StartDelayActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SampleRive" />
+            
+        <activity
+            android:name=".AnimationDelayActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SampleRive" />
+            
         <activity
             android:name=".RiveActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_rive"
-            android:theme="@style/Theme.SampleRive">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.SampleRive" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.SampleRive">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <provider
@@ -43,7 +52,6 @@
             android:authorities="${applicationId}.androidx-startup"
             android:exported="false"
             tools:node="merge">
-
             <meta-data android:name="app.rive.runtime.kotlin.RiveInitializer"
                 android:value="androidx.startup" />
         </provider>

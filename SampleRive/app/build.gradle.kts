@@ -58,6 +58,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.rive.android)
+    implementation("design.spline:spline-runtime:+")
     // During initialization, you may need to add a dependency
     // for Jetpack Startup
     implementation("androidx.startup:startup-runtime:1.1.1")
